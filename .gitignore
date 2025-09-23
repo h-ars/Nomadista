@@ -1,6 +1,23 @@
+# System
 .DS_Store
+
+# Dependencies
 /node_modules/
 
 # React Router
 /.react-router/
+
+# Production build
 /build/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VS Code
+.vscode/
