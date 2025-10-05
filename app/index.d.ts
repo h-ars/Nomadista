@@ -1,3 +1,5 @@
+import type { URL } from "url";
+
 declare interface BaseUser {
   id: string;
   name: string;
@@ -15,6 +17,7 @@ declare type User = BaseUser;
 
 declare interface Country {
   name: string;
+  flag: string;
   coordinates: [number, number];
   value: string;
   openStreetMap?: string;
