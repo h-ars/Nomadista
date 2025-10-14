@@ -87,9 +87,7 @@ const createTrip = ({ loaderData }: Route.ComponentProps) => {
 
       const result: CreateTripResponse = await response.json();
 
-      if(result?.id) console.log('successful trip gen.');
-
-      // this should be in place of console log in above if statement : navigate(`/trips/${result.id}`)
+      if(result?.id) navigate(`/trips/${result.id}`)
 
       else console.error('Failed to generate a trip.')
     } catch (e) {
