@@ -22,7 +22,7 @@ const SignIn = () => {
     const success = await loginAsDemo()
     if (success) {
       // Redirect to dashboard after successful login
-      window.location.href = '/'
+      window.location.href = '/dashboard'
     }
   }
 
