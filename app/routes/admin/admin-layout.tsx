@@ -11,6 +11,12 @@ export async function clientLoader() {
 
         if(!user.$id) return redirect('/sign-in');
 
+        // Skip status check for demo user
+        if (user.email === 'demo@nomadista.com') {
+            console.log('✅ Demo user bypassed status check, accessing dashboard')
+            return user;
+        }
+
         const existingUser = await getExistingUser(user.$id);
         if(existingUser?.status === 'user'){
           return redirect('/');
