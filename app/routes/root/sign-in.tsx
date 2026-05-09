@@ -19,12 +19,20 @@ export async function clientLoader() {
 
 const SignIn = () => {
   const handleDemoLogin = async () => {
-    const success = await loginAsDemo()
-    if (success) {
-      // Redirect to dashboard after successful login
-      window.location.href = '/dashboard'
+  const success = await loginAsDemo()
+  console.log('Demo login success:', success)
+  
+  if (success) {
+    try {
+      const user = await account.get()
+      console.log('Logged in as:', user.email)
+    } catch (e) {
+      console.error('User not logged in:', e)
     }
+    
+    window.location.href = '/dashboard'
   }
+}
 
   return (
     <main className='auth'>
