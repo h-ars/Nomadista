@@ -61,18 +61,6 @@ npm install
 npm run dev
 ```
 
-### Environment Variables
-
-Create a `.env` file in the root directory:
-
-```env
-VITE_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
-VITE_APPWRITE_PROJECT_ID=your_project_id_here
-VITE_GEMINI_API_KEY=your_gemini_api_key_here
-```
-
----
-
 ## 🧪 Architecture Highlights
 
 - **Role-based access control** – Admin vs User authentication flow
@@ -97,7 +85,7 @@ VITE_GEMINI_API_KEY=your_gemini_api_key_here
 Full-stack developer specializing in measurable impact, clean code, and scalable architecture.
 
 - **📧 Email:** dev.harsh.contact@gmail.com
-- **💼 LinkedIn:** [Harsh Bhardwaj](https://www.linkedin.com/in/harsh-bhardwaj-b83b33405/)
+- **💼 LinkedIn:** [Harsh Bhardwaj](www.linkedin.com/in/harsh-bhardwaj-b83b33405)
 - **💻 GitHub:** [h-ars](https://github.com/h-ars)
 - **🚀 Portfolio:** Available upon request
 
